@@ -1,283 +1,81 @@
 /******* Bootstrap Theming ********/
 
-$primary: #DA9F5B;
-$secondary: #33211D;
-$light: #FFFBF2;
-$dark: #111111;
+            $primary: #DF9C30; // Color para letras en fondos oscuros
+            $secondary: #5C3F22; // Color de fondo oscuro
+            $light: #F5F0EB; // Color de fondo claro
+            $dark: #624315; // Color para letras en fondos claros
 
-$font-family-sans-serif: 'Montserrat',
-sans-serif;
+            $font-family-sans-serif: 'Montserrat',
+            sans-serif;
 
-$headings-font-family: 'Roboto',
-sans-serif;
+            $headings-font-family: 'Roboto',
+            sans-serif;
 
-$body-bg: $light;
+            $body-bg: $light;
 
-$body-color: #555555;
+            $body-color: $dark;
 
-$headings-color: $secondary;
+            $headings-color: $secondary;
 
-$display1-size: 8rem;
+            $display1-size: 8rem;
 
-$enable-responsive-font-sizes: true;
+            $enable-responsive-font-sizes: true;
 
-$enable-rounded: false;
+            $enable-rounded: false;
 
-$enable-shadows: false;
+            $enable-shadows: false;
 
-@import "bootstrap/scss/bootstrap";
+            @import "bootstrap/scss/bootstrap";
 
+            /********** Custom CSS ************/
+            h1,
+            h2,
+            .font-weight-bold {
+                font-weight: 700 !important;
+            }
 
-/********** Custom CSS ************/
-h1,
-h2,
-.font-weight-bold {
-    font-weight: 700 !important;
-}
+            h3,
+            h4,
+            .font-weight-medium {
+                font-weight: 500 !important;
+            }
 
-h3,
-h4,
-.font-weight-medium {
-    font-weight: 500 !important;
-}
+            h5,
+            h6,
+            .font-weight-normal {
+                font-weight: 400 !important;
+            }
 
-h5,
-h6,
-.font-weight-normal {
-    font-weight: 400 !important;
-}
+            .btn-primary {
+                color: $light;
+                background-color: $primary;
+                border-color: $primary;
+            }
 
-.btn-primary {
-    color: $dark; 
-    background-color: $primary;
-    border-color: $primary;
-    
-}
+            .back-to-top {
+                background-color: $secondary;
+                color: $primary;
+            }
 
-.btn-square {
-    width: 36px;
-    height: 36px;
-}
+            .container-fluid.nav-bar {
+                background-color: $secondary;
+            }
 
-.btn-sm-square {
-    width: 28px;
-    height: 28px;
-}
+            .navbar-dark .navbar-nav .nav-link {
+                color: $light;
+            }
 
-.btn-lg-square {
-    width: 46px;
-    height: 46px;
-}
+            .navbar-dark .navbar-nav .nav-link:hover,
+            .navbar-dark .navbar-nav .nav-link.active {
+                color: $primary;
+            }
 
-.btn-square,
-.btn-sm-square,
-.btn-lg-square {
-    padding-left: 0;
-    padding-right: 0;
-    text-align: center;
-}
+            .section-title {
+                background-color: $light;
+                color: $dark;
+            }
 
-.back-to-top {
-    position: fixed;
-    display: none;
-    right: 30px;
-    bottom: 30px;
-    z-index: 11;
-    -webkit-animation: action 1s infinite alternate;
-    animation: action 1s infinite alternate;
-}
-
-@-webkit-keyframes action {
-    0% {
-        transform: translateY(0);
-    }
-
-    100% {
-        transform: translateY(-15px);
-    }
-}
-
-@keyframes action {
-    0% {
-        transform: translateY(0);
-    }
-
-    100% {
-        transform: translateY(-15px);
-    }
-}
-
-.container-fluid.nav-bar {
-    position: absolute;
-    z-index: 9;
-}
-
-@media (max-width: 991.98px) {
-    .container-fluid.nav-bar {
-        position: relative;
-        background: $secondary;
-    }
-}
-
-.navbar-dark .navbar-nav .nav-link {
-    padding-left: 15px;
-    padding-right: 15px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    color: $light;
-}
-
-.navbar-dark .navbar-nav .nav-link:hover,
-.navbar-dark .navbar-nav .nav-link.active {
-    color: $primary;
-}
-
-.overlay-top::before,
-.overlay-bottom::after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 15px;
-    left: 0;
-    z-index: 1;
-}
-
-.overlay-top::before {
-    top: -1px;
-    background: url(../img/overlay-top.png);
-}
-
-.overlay-bottom::after {
-    bottom: -1px;
-    background: url(../img/overlay-bottom.png);
-}
-
-.carousel-caption {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(51, 33, 29, .7);
-    z-index: 1;
-}
-
-.section-title {
-    position: relative;
-    padding: 115px 0 35px 0;
-    text-align: center;
-
-    h2.text-primary,
-    h3.text-primary {
-        color: $dark !important; // Use the dark color for better contrast on light backgrounds
-    }
-}
-
-.section-title::after {
-    position: absolute;
-    content: "";
-    width: 2px;
-    height: 100px;
-    top: 0;
-    left: 50%;
-    margin-left: 1px;
-    background: $primary;
-}
-
-.service-icon {
-    margin-right: 15px;
-    width: 45px;
-    height: 45px;
-    font-size: 18px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 45px;
-    color: $secondary;
-    background: $primary;
-}
-
-.menu-price {
-    position: absolute;
-    margin: 0;
-    top: -5px;
-    right: 10px;
-    width: 45px;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 45px;
-    color: $secondary;
-    background: $primary;
-}
-
-.testimonial-carousel .owl-dots {
-    margin-top: 30px;
-    text-align: center;
-}
-
-.testimonial-carousel .owl-dot {
-    position: relative;
-    display: inline-block;
-    margin: 0 5px;
-    width: 20px;
-    height: 20px;
-    border-radius: 20px;
-    background: $primary;
-    transition: .5s;
-}
-
-.testimonial-carousel .owl-dot.active {
-    width: 40px;
-    background: $secondary
-}
-
-.testimonial-carousel .owl-item img {
-    width: 80px;
-    height: 80px;
-}
-
-.contact-form .help-block ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-.reservation,
-.page-header,
-.offer,
-.footer {
-    background: linear-gradient(rgba(51, 33, 29, .9), rgba(51, 33, 29, .9)), url(../img/farolillos.jpg);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-.reservation .text-center {
-    input.form-control,
-    textarea.form-control {
-        color: $white; 
-        &::placeholder {
-            color: rgba($white, 0.7) !important; 
-        }
-    }
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    width: 50px; /* Aumenta el ancho */
-    height: 50px; /* Aumenta la altura */
-    background-size: 100%; /* Ajusta el tamaño del ícono */
-}
-
-.image-option input[type="radio"] {
-    display: none; /* Oculta el radio button */
-}
-/* Asegúrate de que el indicador de foco sea visible cuando se navega con teclado (Criterio 2.4.7, 2.4.11) */
-.image-option input[type="radio"]:focus + img {
-    outline: 2px solid blue; /* Ejemplo de indicador de foco visible */
-}
-.image-option input[type="radio"]:checked + img {
-    border-color: #DA9F5B !important; /* Resalta la imagen seleccionada con un borde */
-}
+            .footer {
+                background-color: $secondary;
+                color: $primary;
+            }
