@@ -8974,6 +8974,12 @@ h6,
   font-weight: 400 !important;
 }
 
+.btn-primary {
+  color: #111111;
+  background-color: #DA9F5B;
+  border-color: #DA9F5B;
+}
+
 .btn-square {
   width: 36px;
   height: 36px;
@@ -9081,6 +9087,10 @@ h6,
   padding: 115px 0 35px 0;
   text-align: center;
 }
+.section-title h2.text-primary,
+.section-title h3.text-primary {
+  color: #111111 !important;
+}
 
 .section-title::after {
   position: absolute;
@@ -9161,6 +9171,15 @@ h6,
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.reservation .text-center input.form-control,
+.reservation .text-center textarea.form-control {
+  color: #fff;
+}
+.reservation .text-center input.form-control::placeholder,
+.reservation .text-center textarea.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.7) !important;
 }
 
 /*# sourceMappingURL=style.min.css.map */

@@ -47,6 +47,13 @@ h6,
     font-weight: 400 !important;
 }
 
+.btn-primary {
+    color: $dark; 
+    background-color: $primary;
+    border-color: $primary;
+    
+}
+
 .btn-square {
     width: 36px;
     height: 36px;
@@ -158,6 +165,11 @@ h6,
     position: relative;
     padding: 115px 0 35px 0;
     text-align: center;
+
+    h2.text-primary,
+    h3.text-primary {
+        color: $dark !important; // Use the dark color for better contrast on light backgrounds
+    }
 }
 
 .section-title::after {
@@ -239,4 +251,15 @@ h6,
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+
+.reservation .text-center {
+    input.form-control,
+    textarea.form-control {
+        color: $white; 
+        &::placeholder {
+            color: rgba($white, 0.7) !important; 
+        }
+    }
 }
