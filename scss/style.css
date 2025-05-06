@@ -9189,4 +9189,17 @@ h6,
   background-size: 100%; /* Ajusta el tamaño del ícono */
 }
 
+.image-option input[type=radio] {
+  display: none; /* Oculta el radio button */
+}
+
+/* Asegúrate de que el indicador de foco sea visible cuando se navega con teclado (Criterio 2.4.7, 2.4.11) */
+.image-option input[type=radio]:focus + img {
+  outline: 2px solid blue; /* Ejemplo de indicador de foco visible */
+}
+
+.image-option input[type=radio]:checked + img {
+  border-color: #DA9F5B !important; /* Resalta la imagen seleccionada con un borde */
+}
+
 /*# sourceMappingURL=style.css.map */
