@@ -264,4 +264,11 @@ h6,
     }
 }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 50px; /* Aumenta el ancho */
+    height: 50px; /* Aumenta la altura */
+    background-size: 100%; /* Ajusta el tamaño del ícono */
+}
+
 
