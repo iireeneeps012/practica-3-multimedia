@@ -8,8 +8,6 @@
     <meta content="Free Website Template" name="keywords">
     <meta content="Free Website Template" name="description">
 
-   <!-- <link href="img/favicon.ico" rel="icon">-->
-
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
@@ -233,36 +231,36 @@
                     <div class="text-center p-5" style="background: rgba(51, 33, 29, .8); color: #f7f7f7;">
                         <form class="mb-5">
                             <div class="form-group">
-                                <label for="nombreMensaje" class="sr-only">Nombre</label>
+                                <label for="nombreMensajeForm" class="sr-only">Nombre</label>
                                 <input type="text" class="form-control bg-transparent border-primary p-4" placeholder="Nombre"
-                                       required="required" id="nombreMensaje" name="nombreMensaje" />
+                                       required="required" id="nombreMensajeForm" name="nombreMensaje" />
                             </div>
                             <div class="form-group">
-                                <label for="emailMensaje" class="sr-only">Correo electrónico</label>
+                                <label for="emailMensajeForm" class="sr-only">Correo electrónico</label>
                                 <input type="email" class="form-control bg-transparent border-primary p-4" placeholder="Correo electrónico"
-                                       required="required" id="emailMensaje" name="emailMensaje" />
+                                       required="required" id="emailMensajeForm" name="emailMensaje" />
                             </div>
 
                             <div class="form-group text-left text-white">
                                 <label class="d-block mb-3">Selecciona una imagen que represente tu mensaje:</label>
                                 <div class="d-flex justify-content-around align-items-center flex-wrap">
                                     <label class="image-option d-block text-center mx-2 my-1">
-                                        <input type="radio" name="selectedImage" value="image_catedral" required id="imgCatedral">
+                                        <input type="radio" name="selectedImage" value="image_catedral" required id="imgCatedralForm">
                                         <img src="img/catedral_sevilla_postal.jpeg" alt="Postal de la Catedral de Sevilla" style="object-fit: contain; width: 200px; height: 200px; cursor: pointer; border: 2px solid transparent; border-radius: 5px;">
                                         <span class="d-block mt-1 text-white" style="font-size: 0.8rem;">Catedral</span>
                                     </label>
                                     <label class="image-option d-block text-center mx-2 my-1">
-                                        <input type="radio" name="selectedImage" value="image_plaza" required id="imgPlazaEspana">
+                                        <input type="radio" name="selectedImage" value="image_plaza" required id="imgPlazaEspanaForm">
                                         <img src="img/sevilla-plaza-espana_postal.jpg" alt="Postal de la Plaza de España en Sevilla" style="object-fit: contain; width: 200px; height: 200px; cursor: pointer; border: 2px solid transparent; border-radius: 5px;">
                                         <span class="d-block mt-1 text-white" style="font-size: 0.8rem;">Plaza España</span>
                                     </label>
                                     <label class="image-option d-block text-center mx-2 my-1">
-                                        <input type="radio" name="selectedImage" value="image_alcazar" required id="imgAlcazar">
+                                        <input type="radio" name="selectedImage" value="image_alcazar" required id="imgAlcazarForm">
                                         <img src="img/alcazar_sevilla_postal.jpg" alt="Postal del Real Alcázar de Sevilla" style="object-fit: contain; width: 200px; height: 200px; cursor: pointer; border: 2px solid transparent; border-radius: 5px;">
                                         <span class="d-block mt-1 text-white" style="font-size: 0.8rem;">Alcázar</span>
                                     </label>
                                     <label class="image-option d-block text-center mx-2 my-1">
-                                        <input type="radio" name="selectedImage" value="image_giralda" required id="imgGiralda">
+                                        <input type="radio" name="selectedImage" value="image_giralda" required id="imgGiraldaForm">
                                         <img src="img/giralda_postal.jpg" alt="Postal de la Giralda de Sevilla" style="object-fit: contain; width: 200px; height: 200px; cursor: pointer; border: 2px solid transparent; border-radius: 5px;">
                                         <span class="d-block mt-1 text-white" style="font-size: 0.8rem;">Giralda</span>
                                     </label>
@@ -271,8 +269,8 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="mensajeTextArea" class="sr-only">Tu mensaje</label>
-                                <textarea class="form-control bg-transparent border-primary p-4" placeholder="Escribe tu mensaje aquí..." rows="3" id="mensajeTextArea" name="mensajeTextArea"></textarea>
+                                <label for="mensajeTextAreaForm" class="sr-only">Tu mensaje</label>
+                                <textarea class="form-control bg-transparent border-primary p-4" placeholder="Escribe tu mensaje aquí..." rows="3" id="mensajeTextAreaForm" name="mensajeTextArea"></textarea>
                             </div>
                             <div>
                                 <button class="btn btn-primary btn-block font-weight-bold py-3" type="submit">Enviar Mensaje</button>
@@ -309,20 +307,20 @@
             <p style="color: #F4F1EC;">Si necesitas cualquier cosa, mándanos un mensaje rellenando el formulario:</p>
             <form action="#" method="post">
                 <div class="form-group">
-                    <label for="nombreContacto" class="sr-only" style="color: #F9DDB0;" >Tu Nombre</label>
-                    <input type="text" class="form-control border-light" style="padding: 25px;" placeholder="Tu Nombre" required="required" name="name" id="nombreContacto">
+                    <label for="nombreContactoForm" class="sr-only" style="color: #F9DDB0;" >Tu Nombre</label>
+                    <input type="text" class="form-control border-light" style="padding: 25px;" placeholder="Tu Nombre" required="required" name="name" id="nombreContactoForm">
                 </div>
                 <div class="form-group">
-                    <label for="emailContacto" class="sr-only" style="color: #F9DDB0;">Tu Email</label>
-                    <input type="email" class="form-control border-light" style="padding: 25px;" placeholder="Tu Email" required="required" name="email" id="emailContacto">
+                    <label for="emailContactoForm" class="sr-only" style="color: #F9DDB0;">Tu Email</label>
+                    <input type="email" class="form-control border-light" style="padding: 25px;" placeholder="Tu Email" required="required" name="email" id="emailContactoForm">
                 </div>
                 <div class="form-group">
-                    <label for="telefonoContacto" class="sr-only" style="color: #F9DDB0;">Tu Teléfono (Opcional)</label>
-                    <input type="text" class="form-control border-light" style="padding: 25px;" placeholder="Tu Teléfono (Opcional)" name="phone" id="telefonoContacto">
+                    <label for="telefonoContactoForm" class="sr-only" style="color: #F9DDB0;">Tu Teléfono (Opcional)</label>
+                    <input type="text" class="form-control border-light" style="padding: 25px;" placeholder="Tu Teléfono (Opcional)" name="phone" id="telefonoContactoForm">
                 </div>
                 <div class="form-group">
-                    <label for="mensajeContacto" class="sr-only" style="color: #F9DDB0;">Escribe tu mensaje aquí</label>
-                    <textarea class="form-control border-light" style="padding: 25px;" placeholder="Escribe tu mensaje aquí..." rows="5" required="required" name="message" id="mensajeContacto"></textarea>
+                    <label for="mensajeContactoForm" class="sr-only" style="color: #F9DDB0;">Escribe tu mensaje aquí</label>
+                    <textarea class="form-control border-light" style="padding: 25px;" placeholder="Escribe tu mensaje aquí..." rows="5" required="required" name="message" id="mensajeContactoForm"></textarea>
                 </div>
                 <div>
                     <button class="btn btn-primary btn-block font-weight-bold py-3 px-3" type="submit">Enviar Mensaje</button>
@@ -331,13 +329,13 @@
         </div>
     </div>
 </div>
-  <div class="container-fluid text-center text-white border-top mt-4 py-4 px-sm-3 px-md-5" style="background-color: #5C3F22; color: #F4F1EC; border-color: rgba(256, 256, 256, .1) !important;">
-            <p class="mb-2">Copyright © <a class="font-weight-bold" href="#" style="color: #F4F1EC;">Domain</a>. All Rights Reserved.</p>
-            <p class="m-0">Modified by Irene Pérez Santiago, i.perezs.2020</p>
-            <p class="m-0">
-                <small>Designed by <a class="font-weight-bold" href="https://htmlcodex.com" style="color: #F4F1EC;">HTML Codex</a></small>
-            </p>
-  </div>
+<div class="container-fluid text-center text-white border-top mt-4 py-4 px-sm-3 px-md-5" style="background-color: #5C3F22; color: #F4F1EC; border-color: rgba(256, 256, 256, .1) !important;">
+    <p class="mb-2">Copyright © <a class="font-weight-bold" href="#" style="color: #F4F1EC;">Domain</a>. All Rights Reserved.</p>
+    <p class="m-0">Modified by Irene Pérez Santiago, i.perezs.2020</p>
+    <p class="m-0">
+        <small>Designed by <a class="font-weight-bold" href="https://htmlcodex.com" style="color: #F4F1EC;">HTML Codex</a></small>
+    </p>
+</div>
 
 <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top" role="button" aria-label="Ir arriba"><i class="fa fa-angle-double-up"></i></a>
 
