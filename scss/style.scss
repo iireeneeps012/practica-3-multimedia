@@ -5,10 +5,10 @@
             $light: #F5F0EB; // Color de fondo claro
             $dark: #624315; // Color para letras en fondos claros
 
-            $font-family-sans-serif: 'Montserrat',
+            $font-family-sans-serif: 'Verdana',
             sans-serif;
 
-            $headings-font-family: 'Roboto',
+            $headings-font-family: 'Verdana',
             sans-serif;
 
             $body-bg: $light;
@@ -78,5 +78,10 @@
             .footer {
                 background-color: $secondary;
                 color: $primary;
+            }
+
+            .span{
+              background-color: #B09F83;
+              color: #050505;
             }
 
