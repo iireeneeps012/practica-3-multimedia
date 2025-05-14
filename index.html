@@ -44,6 +44,18 @@
             object-fit: cover;
             margin-bottom: 15px;
         }
+        /* CSS for sr-only to ensure it's correctly defined if not already in a framework */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
     </style>
 </head>
 
@@ -227,12 +239,12 @@
                             <div class="text-center p-5" style="background: rgba(51, 33, 29, .8); color: #f7f7f7;">
                                 <form class="mb-5" aria-labelledby="envia-imagen-heading">
                                     <div class="form-group">
-                                        <label for="nombreMensajeForm" class="sr-only">Nombre</label>
+                                        <label for="nombreMensajeForm" class="sr-only">Nombre para el envío de imagen</label>
                                         <input type="text" class="form-control bg-transparent border-primary p-4" placeholder="Nombre"
                                                required="required" id="nombreMensajeForm" name="nombreMensaje" autocomplete="name" />
                                     </div>
                                     <div class="form-group">
-                                        <label for="emailMensajeForm" class="sr-only">Correo electrónico</label>
+                                        <label for="emailMensajeForm" class="sr-only">Correo electrónico para el envío de imagen</label>
                                         <input type="email" class="form-control bg-transparent border-primary p-4" placeholder="Correo electrónico"
                                                required="required" id="emailMensajeForm" name="emailMensaje" autocomplete="email" />
                                     </div>
@@ -264,7 +276,7 @@
                                         </fieldset>
                                     </div>
                                     <div class="form-group">
-                                        <label for="mensajeTextAreaForm" class="sr-only">Tu mensaje</label>
+                                        <label for="mensajeTextAreaForm" class="sr-only">Tu mensaje para el envío de imagen</label>
                                         <textarea class="form-control bg-transparent border-primary p-4" placeholder="Escribe tu mensaje aquí..." rows="3" id="mensajeTextAreaForm" name="mensajeTextArea" autocomplete="off"></textarea>
                                     </div>
                                     <div>
@@ -286,19 +298,19 @@
                 <p style="color: #F4F1EC;">Si necesitas cualquier cosa, mándanos un mensaje rellenando el formulario:</p>
                 <form action="#" method="post" aria-labelledby="contacta-nosotros-aside-heading">
                     <div class="form-group">
-                        <label for="nombreContactoFormAside" class="sr-only">Tu Nombre</label>
+                        <label for="nombreContactoFormAside" class="sr-only">Tu Nombre para contacto</label>
                         <input type="text" class="form-control border-light" style="padding: 25px;" placeholder="Tu Nombre" required="required" name="nameAside" id="nombreContactoFormAside" autocomplete="name">
                     </div>
                     <div class="form-group">
-                        <label for="emailContactoFormAside" class="sr-only">Tu Email</label>
+                        <label for="emailContactoFormAside" class="sr-only">Tu Email para contacto</label>
                         <input type="email" class="form-control border-light" style="padding: 25px;" placeholder="Tu Email" required="required" name="emailAside" id="emailContactoFormAside" autocomplete="email">
                     </div>
                     <div class="form-group">
-                        <label for="telefonoContactoFormAside" class="sr-only">Tu Teléfono (Opcional)</label>
+                        <label for="telefonoContactoFormAside" class="sr-only">Tu Teléfono para contacto (Opcional)</label>
                         <input type="text" class="form-control border-light" style="padding: 25px;" placeholder="Tu Teléfono (Opcional)" name="phoneAside" id="telefonoContactoFormAside" autocomplete="tel">
                     </div>
                     <div class="form-group">
-                        <label for="mensajeContactoFormAside" class="sr-only">Escribe tu mensaje aquí</label>
+                        <label for="mensajeContactoFormAside" class="sr-only">Escribe tu mensaje aquí para contacto</label>
                         <textarea class="form-control border-light" style="padding: 25px;" placeholder="Escribe tu mensaje aquí..." rows="5" required="required" name="messageAside" id="mensajeContactoFormAside" autocomplete="off"></textarea>
                     </div>
                     <div>
