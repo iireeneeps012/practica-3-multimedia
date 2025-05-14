@@ -12,279 +12,271 @@
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
     <link href="css/style.min.css" rel="stylesheet">
+    <style>
+        .header-static-content {
+            position: relative;
+            width: 100%;
+        }
+        .header-static-content img {
+            display: block;
+            width: 100%;
+            max-height: 600px; /* Ajusta según necesites */
+            object-fit: cover;
+        }
+        .header-caption {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0,0,0,0.5); /* Fondo semitransparente para legibilidad */
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            width: 80%;
+            max-width: 700px;
+        }
+        .linear-place-item {
+            margin-bottom: 40px; /* Espacio entre cada lugar */
+        }
+        .linear-place-item img {
+            max-height: 400px; /* Altura máxima para imágenes de lugares */
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+    </style>
 </head>
 
 <body>
 
 <header role="banner">
     <div class="container-fluid p-0 mb-5">
-        <div id="blog-carousel" class="carousel slide overlay-bottom" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="w-100" src="img/catedral_sevilla.jpg" alt="Vista de la Catedral de Sevilla y la Giralda al atardecer">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <h1 class="display-1 text-white m-0">Sevilla</h1>
-                        <h2 class="text-white m-0">La joya de Andalucía</h2>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="w-100" src="img/plaza_sevilla.jpg" alt="Vista panorámica de la Plaza de España en Sevilla">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <h1 class="display-1 text-white m-0">Sevilla</h1>
-                        <h2 class="text-white m-0">Tu Guía Completa para conocer la ciudad</h2>
-                    </div>
-                </div>
+        <div class="header-static-content overlay-bottom">
+            <img class="w-100" src="img/catedral_sevilla.jpg" alt="Vista de la Catedral de Sevilla y la Giralda al atardecer">
+            <div class="header-caption">
+                <h1 class="display-1 text-white m-0" style="font-size: 4rem;">Sevilla</h1>
+                <h2 class="text-white m-0" style="font-size: 2rem;">La joya de Andalucía</h2>
             </div>
-            <a class="carousel-control-prev" href="#blog-carousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: #B09F83; color: #050505"></span>
-                <span class="sr-only" style="background-color: #B09F83; color: #050505">Anterior</span>
-            </a>
-            <a class="carousel-control-next" href="#blog-carousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: #B09F83; color: #050505"></span>
-                <span class="sr-only" style="background-color: #B09F83; color: #050505">Siguiente</span>
-            </a>
         </div>
     </div>
 </header>
 
 <main role="main">
-    <article aria-labelledby="sobre-la-ciudad-heading">
-        <div class="container-fluid py-5">
-            <div class="container">
-                <div class="section-title">
-                    <h2 id="sobre-la-ciudad-heading" class="display-4">Sobre la ciudad</h2>
-                </div>
-                <div class="row">
-                    <section class="col-lg-4 py-0 py-lg-5" aria-labelledby="historia-ciudad-heading">
-                        <h3 id="historia-ciudad-heading" class="mb-3">La historia de la ciudad</h3>
-                        <p>Sevilla es un crisol de culturas milenarias. Sus raíces se hunden en la antigüedad, con vestigios romanos y, sobre todo, un esplendoroso legado de la época islámica, visible en la Giralda y el Alcázar. Tras la Reconquista, la ciudad vivió su máximo apogeo con el monopolio del comercio con América en el Siglo de Oro, convirtiéndose en una metrópoli rica y vibrante que dejó una huella imborrable en su patrimonio artístico y cultural.</p>
-                    </section>
-                    <div class="col-lg-4 py-5 py-lg-0" style="min-height: 500px;">
-                        <div class="position-relative h-100">
-                            <img class="position-absolute w-100 h-100" src="img/Escudo_de_Sevilla.png" style="object-fit: contain; width: 50%; height: 50%;" alt="Escudo de la ciudad de Sevilla">
-                        </div>
+    <div id="primary-content-wrapper">
+        <article aria-labelledby="sobre-la-ciudad-heading">
+            <div class="container-fluid py-5">
+                <div class="container">
+                    <div class="section-title">
+                        <h2 id="sobre-la-ciudad-heading" class="display-4">Sobre la ciudad</h2>
                     </div>
-                    <section class="col-lg-4 py-0 py-lg-5" aria-labelledby="vision-ciudad-heading">
-                        <h3 id="vision-ciudad-heading" class="mb-3">La visión de la ciudad</h3>
-                        <p>Sevilla se proyecta como una ciudad que equilibra magistralmente su glorioso pasado con un presente dinámico. Nos vemos como un destino que ofrece la majestuosidad de sus monumentos históricos, la autenticidad del flamenco, la intensidad de fiestas únicas como la Semana Santa y la Feria, y una gastronomía exquisita. Una ciudad acogedora, llena de vida y color, que abraza la vanguardia sin perder su alma tradicional, invitando a vivir experiencias inolvidables.</p>
-                    </section>
-                </div>
-            </div>
-        </div>
-    </article>
-
-    <article aria-labelledby="gastronomia-heading">
-        <div class="container-fluid pt-5">
-            <div class="container">
-                <div class="section-title">
-                    <h2 id="gastronomia-heading" class="text-primary text-uppercase" style="letter-spacing: 5px;">Gastronomía</h2>
-                </div>
-                <p>Descubre los platos más emblemáticos de nuestra cocina local.</p>
-                <h3 class="display-4">Comida Tradicional</h3>
-                <div class="row">
-                    <section class="col-lg-6 mb-5" aria-labelledby="pescaito-frito-heading">
-                        <div class="row align-items-center">
-                            <div class="col-sm-5">
-                                <img class="img-fluid mb-3 mb-sm-0" src="img/pescaito.jpg" alt="Plato de pescaíto frito variado">
-                            </div>
-                            <div class="col-sm-7">
-                                <h4 id="pescaito-frito-heading">Pescaíto Frito</h4>
-                                <p class="m-0">Un clásico indiscutible. Consiste en una variada selección de pescado fresco de la costa andaluza (como boquerones, calamares, puntillitas o cazón) enharinado y frito en aceite de oliva bien caliente hasta quedar crujiente por fuera y tierno por dentro. Se suele servir recién hecho en cartuchos de papel.</p>
+                    <div class="row">
+                        <section class="col-lg-4 py-0 py-lg-5" aria-labelledby="historia-ciudad-heading">
+                            <h3 id="historia-ciudad-heading" class="mb-3">La historia de la ciudad</h3>
+                            <p>Sevilla es un crisol de culturas milenarias. Sus raíces se hunden en la antigüedad, con vestigios romanos y, sobre todo, un esplendoroso legado de la época islámica, visible en la Giralda y el Alcázar. Tras la Reconquista, la ciudad vivió su máximo apogeo con el monopolio del comercio con América en el Siglo de Oro, convirtiéndose en una metrópoli rica y vibrante que dejó una huella imborrable en su patrimonio artístico y cultural.</p>
+                        </section>
+                        <div class="col-lg-4 py-5 py-lg-0" style="min-height: 500px;">
+                            <div class="position-relative h-100">
+                                <img class="position-absolute w-100 h-100" src="img/Escudo_de_Sevilla.png" style="object-fit: contain; width: 50%; height: 50%;" alt="Escudo de la ciudad de Sevilla">
                             </div>
                         </div>
-                    </section>
-                    <section class="col-lg-6 mb-5" aria-labelledby="gazpacho-heading">
-                        <div class="row align-items-center">
-                            <div class="col-sm-5">
-                                <img class="img-fluid mb-3 mb-sm-0" src="img/gazpacho.jpg" alt="Bol de gazpacho andaluz con guarnición">
-                            </div>
-                            <div class="col-sm-7">
-                                <h4 id="gazpacho-heading">Gazpacho</h4>
-                                <p class="m-0">Una sopa fría refrescante, perfecta para los meses de calor. Se elabora principalmente con tomate, pimiento, pepino, cebolla, ajo, aceite de oliva, vinagre, agua y sal, todo triturado hasta obtener una textura líquida y homogénea. Nutritivo y lleno de sabor.</p>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="col-lg-6 mb-5" aria-labelledby="rabo-toro-heading">
-                        <div class="row align-items-center">
-                            <div class="col-sm-5">
-                                <img class="img-fluid mb-3 mb-sm-0" src="img/rabo_toro.jpg" alt="Guiso de rabo de toro con patatas">
-                            </div>
-                            <div class="col-sm-7">
-                                <h4 id="rabo-toro-heading">Rabo de Toro</h4>
-                                <p class="m-0">Un guiso contundente y sabroso. Se prepara estofando lentamente la cola de toro en un rico sofrito con verduras, vino tinto y especias, hasta que la carne queda tiernísima y se desprende fácilmente del hueso. Ideal para mojar pan.</p>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="col-lg-6 mb-5" aria-labelledby="montadito-pringa-heading">
-                        <div class="row align-items-center">
-                            <div class="col-sm-5">
-                                <img class="img-fluid mb-3 mb-sm-0" src="img/montadito_pringa.jpg" alt="Primer plano de un montadito de pringá">
-                            </div>
-                            <div class="col-sm-7">
-                                <h4 id="montadito-pringa-heading">Montadito de Pringá</h4>
-                                <p class="m-0">Una tapa muy popular que aprovecha las carnes y embutidos cocidos en el puchero o cocido andaluz. Estos ingredientes (generalmente carne de cerdo, ternera, pollo y embutidos como morcilla o chorizo) se desmenuzan y prensan para rellenar un pequeño bollo de pan, sirviéndose caliente. Es un bocado lleno de sabor tradicional.</p>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </div>
-        </div>
-    </article>
-
-    <section class="offer container-fluid my-5 py-5 text-center position-relative overlay-top overlay-bottom" style="background-color: #5C3F22;" aria-labelledby="video-sevilla-heading">
-        <div class="container py-5">
-            <h2 id="video-sevilla-heading" class="mb-3" style="color: #F4F1EC">Descubre Sevilla en Video</h2>
-            <h3 class="font-weight-normal mb-4 pb-3" style="color: #F4F1EC">Mira nuestro recorrido por los 10 lugares imprescindibles</h3>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/vyqeMGTz0oc?si=2px8dOuNxAjpsY1J" title="YouTube video player - Recorrido por los 10 lugares imprescindibles de Sevilla" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-    </section>
-
-    <article aria-labelledby="sitios-visitar-heading">
-        <div class="container-fluid pt-5">
-            <div class="container">
-                <div class="section-title">
-                    <h2 id="sitios-visitar-heading" class="text-primary text-uppercase" style="letter-spacing: 5px;">Sitios que visitar</h2>
-                </div>
-                <p>Prepárate para explorar los iconos de la ciudad.</p>
-                <h3 class="display-4">Los mejores sitios para visitar</h3>
-
-                <section aria-label="Sitios para visitar presentados en carrusel"> {/* MODIFICADO: nav cambiado a section y aria-label actualizada */}
-                    <div id="placesCarousel" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators" style="background-color: #B09F83; color: #050505">
-                            <li data-target="#placesCarousel" data-slide-to="0" class="active" aria-current="true" aria-label="Diapositiva 1: Catedral y Giralda"><span class="sr-only">Diapositiva 1: Catedral y Giralda</span></li>
-                            <li data-target="#placesCarousel" data-slide-to="1" aria-label="Diapositiva 2: Real Alcázar"><span class="sr-only">Diapositiva 2: Real Alcázar</span></li>
-                            <li data-target="#placesCarousel" data-slide-to="2" aria-label="Diapositiva 3: Plaza de España"><span class="sr-only">Diapositiva 3: Plaza de España</span></li>
-                            <li data-target="#placesCarousel" data-slide-to="3" aria-label="Diapositiva 4: Parque de María Luisa"><span class="sr-only">Diapositiva 4: Parque de María Luisa</span></li>
-                            <li data-target="#placesCarousel" data-slide-to="4" aria-label="Diapositiva 5: Barrio de Santa Cruz"><span class="sr-only">Diapositiva 5: Barrio de Santa Cruz</span></li>
-                            <li data-target="#placesCarousel" data-slide-to="5" aria-label="Diapositiva 6: Metropol Parasol (Las Setas)"><span class="sr-only">Diapositiva 6: Metropol Parasol (Las Setas)</span></li>
-                        </ol>
-
-                        <div class="carousel-inner">
-                            <section class="carousel-item active" aria-labelledby="catedral-giralda-carousel-heading">
-                                <img class="d-block w-100" src="img/catedral-giralda-sevilla.jpg" alt="Imagen de la Catedral y la Giralda de Sevilla" style="object-fit: cover; height: 400px;">
-                                <div class="text-center mt-3 pb-5">
-                                    <h4 id="catedral-giralda-carousel-heading">Cátedral de Sevilla y Giralda</h4>
-                                    <p class="px-4">Imponente catedral gótica con la tumba de Colón y un alminar con vistas espectaculares.</p>
-                                </div>
-                            </section>
-                            <section class="carousel-item" aria-labelledby="real-alcazar-carousel-heading">
-                                <img class="d-block w-100" src="img/real-alcazar-sevilla.jpg" alt="Imagen del Real Alcázar de Sevilla" style="object-fit: cover; height: 400px;">
-                                <div class="text-center mt-3 pb-5">
-                                    <h4 id="real-alcazar-carousel-heading">Real Alcázar de Sevilla</h4>
-                                    <p class="px-4">Palacio mudéjar de ensueño con jardines exóticos, declarado Patrimonio de la Humanidad.</p>
-                                </div>
-                            </section>
-                            <section class="carousel-item" aria-labelledby="plaza-espana-carousel-heading">
-                                <img class="d-block w-100" src="img/plaza_sevilla.jpg" alt="Imagen de la Plaza de España de Sevilla" style="object-fit: cover; height: 400px;">
-                                <div class="text-center mt-3 pb-5">
-                                    <h4 id="plaza-espana-carousel-heading">Plaza de España</h4>
-                                    <p class="px-4">Majestuosa plaza semicircular con azulejos provinciales y un canal navegable.</p>
-                                </div>
-                            </section>
-                            <section class="carousel-item" aria-labelledby="parque-maria-luisa-carousel-heading">
-                                <img class="d-block w-100" src="img/parque-maria-luisa.jpeg" alt="Imagen del Parque de María Luisa de Sevilla" style="object-fit: cover; height: 400px;">
-                                <div class="text-center mt-3 pb-5">
-                                    <h4 id="parque-maria-luisa-carousel-heading">Parque de María Luisa</h4>
-                                    <p class="px-4">Un verde oasis urbano con fuentes, estanques y glorietas para pasear.</p>
-                                </div>
-                            </section>
-                            <section class="carousel-item" aria-labelledby="barrio-santa-cruz-carousel-heading">
-                                <img class="d-block w-100" src="img/barrio-santa-cruz.jpg" alt="Imagen del Barrio de Santa Cruz de Sevilla" style="object-fit: cover; height: 400px;">
-                                <div class="text-center mt-3 pb-5">
-                                    <h4 id="barrio-santa-cruz-carousel-heading">Barrio de Santa Cruz</h4>
-                                    <p class="px-4">Antiguo barrio judío de calles estrechas y patios floridos llenos de encanto.</p>
-                                </div>
-                            </section>
-                            <section class="carousel-item" aria-labelledby="metropol-parasol-carousel-heading">
-                                <img class="d-block w-100" src="img/las-setas.jpg" alt="Imagen del Metropol Parasol (Las Setas) de Sevilla" style="object-fit: cover; height: 400px;">
-                                <div class="text-center mt-3 pb-5">
-                                    <h4 id="metropol-parasol-carousel-heading">Metropol Parasol (Las Setas)</h4>
-                                    <p class="px-4">Moderna estructura de madera con mirador panorámico y restos arqueológicos.</p>
-                                </div>
-                            </section>
-                        </div>
-                        <a class="carousel-control-prev" href="#placesCarousel" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: #B09F83; color: #050505"></span>
-                            <span class="sr-only" style="background-color: #B09F83; color: #050505">Anterior</span>
-                        </a>
-                        <a class="carousel-control-next" href="#placesCarousel" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: #B09F83; color: #050505"></span>
-                            <span class="sr-only" style="background-color: #B09F83; color: #050505">Siguiente</span>
-                        </a>
-                    </div>
-                </section>
-            </div>
-        </div>
-    </article>
-
-    <section class="container-fluid my-5" aria-labelledby="envia-imagen-heading">
-        <div class="container-fluid">
-            <div class="reservation position-relative overlay-top overlay-bottom" style="background-color: #5C3F22; min-height: 650px;">
-                <div class="row align-items-center">
-                    <div class="col-lg-4 my-5 my-lg-0">
-                        <div class="p-5">
-                            <div class="mb-4">
-                                <h2 id="envia-imagen-heading" class="display-3" style="color: #F4F1EC;">¡Envía una imagen a tu familia!</h2>
-                                <h3 class="text-white" style="color: #F4F1EC;">Con una imagen de tu lugar favorito</h3>
-                            </div>
-                            <p class="text-white" style="color: #F4F1EC;">Usa el formulario para seleccionar una imagen icónica de Sevilla y añadir un mensaje personal. Estarán encantados de saber noticias tuyas.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-8">
-                        <div class="text-center p-5" style="background: rgba(51, 33, 29, .8); color: #f7f7f7;">
-                            <form class="mb-5" aria-labelledby="envia-imagen-heading">
-                                <div class="form-group">
-                                    <label for="nombreMensajeForm" class="sr-only">Nombre</label>
-                                    <input type="text" class="form-control bg-transparent border-primary p-4" placeholder="Nombre"
-                                           required="required" id="nombreMensajeForm" name="nombreMensaje" autocomplete="name" />
-                                </div>
-                                <div class="form-group">
-                                    <label for="emailMensajeForm" class="sr-only">Correo electrónico</label>
-                                    <input type="email" class="form-control bg-transparent border-primary p-4" placeholder="Correo electrónico"
-                                           required="required" id="emailMensajeForm" name="emailMensaje" autocomplete="email" />
-                                </div>
-                                <div class="form-group text-left text-white">
-                                    <fieldset>
-                                        <legend class="d-block mb-3 text-white" style="font-size: 1rem;">Selecciona una imagen que represente tu mensaje:</legend>
-                                        <div class="d-flex justify-content-around align-items-center flex-wrap">
-                                            <label class="image-option d-block text-center mx-2 my-1" for="imgCatedralForm">
-                                                <input type="radio" name="selectedImage" value="image_catedral" required id="imgCatedralForm">
-                                                <img src="img/catedral_sevilla_postal.jpeg" alt="Postal de la Catedral de Sevilla" style="object-fit: contain; width: 200px; height: 200px; cursor: pointer; border: 2px solid transparent; border-radius: 5px;">
-                                                <span class="d-block mt-1 " style="font-size: 0.8rem;background-color: #B09F83; color: #050505 ">Catedral</span>
-                                            </label>
-                                            <label class="image-option d-block text-center mx-2 my-1" for="imgPlazaEspanaForm">
-                                                <input type="radio" name="selectedImage" value="image_plaza" required id="imgPlazaEspanaForm">
-                                                <img src="img/sevilla-plaza-espana_postal.jpg" alt="Postal de la Plaza de España en Sevilla" style="object-fit: contain; width: 200px; height: 200px; cursor: pointer; border: 2px solid transparent; border-radius: 5px;">
-                                                <span class="d-block mt-1 " style="font-size: 0.8rem; background-color: #B09F83; color: #050505">Plaza España</span>
-                                            </label>
-                                            <label class="image-option d-block text-center mx-2 my-1" for="imgAlcazarForm">
-                                                <input type="radio" name="selectedImage" value="image_alcazar" required id="imgAlcazarForm">
-                                                <img src="img/alcazar_sevilla_postal.jpg" alt="Postal del Real Alcázar de Sevilla" style="object-fit: contain; width: 200px; height: 200px; cursor: pointer; border: 2px solid transparent; border-radius: 5px;">
-                                                <span class="d-block mt-1 " style="font-size: 0.8rem; background-color: #B09F83; color: #050505">Alcázar</span>
-                                            </label>
-                                            <label class="image-option d-block text-center mx-2 my-1" for="imgGiraldaForm">
-                                                <input type="radio" name="selectedImage" value="image_giralda" required id="imgGiraldaForm">
-                                                <img src="img/giralda_postal.jpg" alt="Postal de la Giralda de Sevilla" style="object-fit: contain; width: 200px; height: 200px; cursor: pointer; border: 2px solid transparent; border-radius: 5px;">
-                                                <span class="d-block mt-1 " style="font-size: 0.8rem; background-color: #B09F83; color: #050505">Giralda</span>
-                                            </label>
-                                        </div>
-                                    </fieldset>
-                                </div>
-                                <div class="form-group">
-                                    <label for="mensajeTextAreaForm" class="sr-only">Tu mensaje</label>
-                                    <textarea class="form-control bg-transparent border-primary p-4" placeholder="Escribe tu mensaje aquí..." rows="3" id="mensajeTextAreaForm" name="mensajeTextArea" autocomplete="off"></textarea>
-                                </div>
-                                <div>
-                                    <button class="btn btn-primary btn-block font-weight-bold py-3" type="submit">Enviar Mensaje</button>
-                                </div>
-                            </form>
-                        </div>
+                        <section class="col-lg-4 py-0 py-lg-5" aria-labelledby="vision-ciudad-heading">
+                            <h3 id="vision-ciudad-heading" class="mb-3">La visión de la ciudad</h3>
+                            <p>Sevilla se proyecta como una ciudad que equilibra magistralmente su glorioso pasado con un presente dinámico. Nos vemos como un destino que ofrece la majestuosidad de sus monumentos históricos, la autenticidad del flamenco, la intensidad de fiestas únicas como la Semana Santa y la Feria, y una gastronomía exquisita. Una ciudad acogedora, llena de vida y color, que abraza la vanguardia sin perder su alma tradicional, invitando a vivir experiencias inolvidables.</p>
+                        </section>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-</main>
+        </article>
+
+        <article aria-labelledby="gastronomia-heading">
+            <div class="container-fluid pt-5">
+                <div class="container">
+                    <div class="section-title">
+                        <h2 id="gastronomia-heading" class="text-primary text-uppercase" style="letter-spacing: 5px;">Gastronomía</h2>
+                    </div>
+                    <p>Descubre los platos más emblemáticos de nuestra cocina local.</p>
+                    <h3 class="display-4">Comida Tradicional</h3>
+                    <div class="row">
+                        <section class="col-lg-6 mb-5" aria-labelledby="pescaito-frito-heading">
+                            <div class="row align-items-center">
+                                <div class="col-sm-5">
+                                    <img class="img-fluid mb-3 mb-sm-0" src="img/pescaito.jpg" alt="Plato de pescaíto frito variado">
+                                </div>
+                                <div class="col-sm-7">
+                                    <h4 id="pescaito-frito-heading">Pescaíto Frito</h4>
+                                    <p class="m-0">Un clásico indiscutible. Consiste en una variada selección de pescado fresco de la costa andaluza (como boquerones, calamares, puntillitas o cazón) enharinado y frito en aceite de oliva bien caliente hasta quedar crujiente por fuera y tierno por dentro. Se suele servir recién hecho en cartuchos de papel.</p>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="col-lg-6 mb-5" aria-labelledby="gazpacho-heading">
+                            <div class="row align-items-center">
+                                <div class="col-sm-5">
+                                    <img class="img-fluid mb-3 mb-sm-0" src="img/gazpacho.jpg" alt="Bol de gazpacho andaluz con guarnición">
+                                </div>
+                                <div class="col-sm-7">
+                                    <h4 id="gazpacho-heading">Gazpacho</h4>
+                                    <p class="m-0">Una sopa fría refrescante, perfecta para los meses de calor. Se elabora principalmente con tomate, pimiento, pepino, cebolla, ajo, aceite de oliva, vinagre, agua y sal, todo triturado hasta obtener una textura líquida y homogénea. Nutritivo y lleno de sabor.</p>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="col-lg-6 mb-5" aria-labelledby="rabo-toro-heading">
+                            <div class="row align-items-center">
+                                <div class="col-sm-5">
+                                    <img class="img-fluid mb-3 mb-sm-0" src="img/rabo_toro.jpg" alt="Guiso de rabo de toro con patatas">
+                                </div>
+                                <div class="col-sm-7">
+                                    <h4 id="rabo-toro-heading">Rabo de Toro</h4>
+                                    <p class="m-0">Un guiso contundente y sabroso. Se prepara estofando lentamente la cola de toro en un rico sofrito con verduras, vino tinto y especias, hasta que la carne queda tiernísima y se desprende fácilmente del hueso. Ideal para mojar pan.</p>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="col-lg-6 mb-5" aria-labelledby="montadito-pringa-heading">
+                            <div class="row align-items-center">
+                                <div class="col-sm-5">
+                                    <img class="img-fluid mb-3 mb-sm-0" src="img/montadito_pringa.jpg" alt="Primer plano de un montadito de pringá">
+                                </div>
+                                <div class="col-sm-7">
+                                    <h4 id="montadito-pringa-heading">Montadito de Pringá</h4>
+                                    <p class="m-0">Una tapa muy popular que aprovecha las carnes y embutidos cocidos en el puchero o cocido andaluz. Estos ingredientes (generalmente carne de cerdo, ternera, pollo y embutidos como morcilla o chorizo) se desmenuzan y prensan para rellenar un pequeño bollo de pan, sirviéndose caliente. Es un bocado lleno de sabor tradicional.</p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <section class="offer container-fluid my-5 py-5 text-center position-relative overlay-top overlay-bottom" style="background-color: #5C3F22;" aria-labelledby="video-sevilla-heading">
+            <div class="container py-5">
+                <h2 id="video-sevilla-heading" class="mb-3" style="color: #F4F1EC">Descubre Sevilla en Video</h2>
+                <h3 class="font-weight-normal mb-4 pb-3" style="color: #F4F1EC">Mira nuestro recorrido por los 10 lugares imprescindibles</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/vyqeMGTz0oc?si=2px8dOuNxAjpsY1J" title="YouTube video player - Recorrido por los 10 lugares imprescindibles de Sevilla" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <article aria-labelledby="sitios-visitar-heading">
+            <div class="container-fluid pt-5">
+                <div class="container">
+                    <div class="section-title">
+                        <h2 id="sitios-visitar-heading" class="text-primary text-uppercase" style="letter-spacing: 5px;">Sitios que visitar</h2>
+                    </div>
+                    <p>Prepárate para explorar los iconos de la ciudad.</p>
+                    <h3 class="display-4">Los mejores sitios para visitar</h3>
+                    <div class="linear-places-to-visit mt-5">
+                        <section aria-labelledby="catedral-giralda-item-heading" class="linear-place-item">
+                            <img class="d-block w-100" src="img/catedral-giralda-sevilla.jpg" alt="Imagen de la Catedral y la Giralda de Sevilla">
+                            <div class="text-center mt-3">
+                                <h4 id="catedral-giralda-item-heading">Cátedral de Sevilla y Giralda</h4>
+                                <p class="px-4">Imponente catedral gótica con la tumba de Colón y un alminar con vistas espectaculares.</p>
+                            </div>
+                        </section>
+                        <section aria-labelledby="real-alcazar-item-heading" class="linear-place-item">
+                            <img class="d-block w-100" src="img/real-alcazar-sevilla.jpg" alt="Imagen del Real Alcázar de Sevilla">
+                            <div class="text-center mt-3">
+                                <h4 id="real-alcazar-item-heading">Real Alcázar de Sevilla</h4>
+                                <p class="px-4">Palacio mudéjar de ensueño con jardines exóticos, declarado Patrimonio de la Humanidad.</p>
+                            </div>
+                        </section>
+                        <section aria-labelledby="plaza-espana-item-heading" class="linear-place-item">
+                            <img class="d-block w-100" src="img/plaza_sevilla.jpg" alt="Imagen de la Plaza de España de Sevilla">
+                            <div class="text-center mt-3">
+                                <h4 id="plaza-espana-item-heading">Plaza de España</h4>
+                                <p class="px-4">Majestuosa plaza semicircular con azulejos provinciales y un canal navegable.</p>
+                            </div>
+                        </section>
+                        <section aria-labelledby="parque-maria-luisa-item-heading" class="linear-place-item">
+                            <img class="d-block w-100" src="img/parque-maria-luisa.jpeg" alt="Imagen del Parque de María Luisa de Sevilla">
+                            <div class="text-center mt-3">
+                                <h4 id="parque-maria-luisa-item-heading">Parque de María Luisa</h4>
+                                <p class="px-4">Un verde oasis urbano con fuentes, estanques y glorietas para pasear.</p>
+                            </div>
+                        </section>
+                        <section aria-labelledby="barrio-santa-cruz-item-heading" class="linear-place-item">
+                            <img class="d-block w-100" src="img/barrio-santa-cruz.jpg" alt="Imagen del Barrio de Santa Cruz de Sevilla">
+                            <div class="text-center mt-3">
+                                <h4 id="barrio-santa-cruz-item-heading">Barrio de Santa Cruz</h4>
+                                <p class="px-4">Antiguo barrio judío de calles estrechas y patios floridos llenos de encanto.</p>
+                            </div>
+                        </section>
+                        <section aria-labelledby="metropol-parasol-item-heading" class="linear-place-item">
+                            <img class="d-block w-100" src="img/las-setas.jpg" alt="Imagen del Metropol Parasol (Las Setas) de Sevilla">
+                            <div class="text-center mt-3">
+                                <h4 id="metropol-parasol-item-heading">Metropol Parasol (Las Setas)</h4>
+                                <p class="px-4">Moderna estructura de madera con mirador panorámico y restos arqueológicos.</p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <section class="container-fluid my-5" aria-labelledby="envia-imagen-heading">
+            <div class="container-fluid">
+                <div class="reservation position-relative overlay-top overlay-bottom" style="background-color: #5C3F22; min-height: 650px;">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4 my-5 my-lg-0">
+                            <div class="p-5">
+                                <div class="mb-4">
+                                    <h2 id="envia-imagen-heading" class="display-3" style="color: #F4F1EC;">¡Envía una imagen a tu familia!</h2>
+                                    <h3 class="text-white" style="color: #F4F1EC;">Con una imagen de tu lugar favorito</h3>
+                                </div>
+                                <p class="text-white" style="color: #F4F1EC;">Usa el formulario para seleccionar una imagen icónica de Sevilla y añadir un mensaje personal. Estarán encantados de saber noticias tuyas.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="text-center p-5" style="background: rgba(51, 33, 29, .8); color: #f7f7f7;">
+                                <form class="mb-5" aria-labelledby="envia-imagen-heading">
+                                    <div class="form-group">
+                                        <label for="nombreMensajeForm" class="sr-only">Nombre</label>
+                                        <input type="text" class="form-control bg-transparent border-primary p-4" placeholder="Nombre"
+                                               required="required" id="nombreMensajeForm" name="nombreMensaje" autocomplete="name" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="emailMensajeForm" class="sr-only">Correo electrónico</label>
+                                        <input type="email" class="form-control bg-transparent border-primary p-4" placeholder="Correo electrónico"
+                                               required="required" id="emailMensajeForm" name="emailMensaje" autocomplete="email" />
+                                    </div>
+                                    <div class="form-group text-left text-white">
+                                        <fieldset>
+                                            <legend class="d-block mb-3 text-white" style="font-size: 1rem;">Selecciona una imagen que represente tu mensaje:</legend>
+                                            <div class="d-flex justify-content-around align-items-center flex-wrap">
+                                                <label class="image-option d-block text-center mx-2 my-1" for="imgCatedralForm">
+                                                    <input type="radio" name="selectedImage" value="image_catedral" required id="imgCatedralForm">
+                                                    <img src="img/catedral_sevilla_postal.jpeg" alt="Postal de la Catedral de Sevilla" style="object-fit: contain; width: 200px; height: 200px; cursor: pointer; border: 2px solid transparent; border-radius: 5px;">
+                                                    <span class="d-block mt-1 " style="font-size: 0.8rem;background-color: #B09F83; color: #050505 ">Catedral</span>
+                                                </label>
+                                                <label class="image-option d-block text-center mx-2 my-1" for="imgPlazaEspanaForm">
+                                                    <input type="radio" name="selectedImage" value="image_plaza" required id="imgPlazaEspanaForm">
+                                                    <img src="img/sevilla-plaza-espana_postal.jpg" alt="Postal de la Plaza de España en Sevilla" style="object-fit: contain; width: 200px; height: 200px; cursor: pointer; border: 2px solid transparent; border-radius: 5px;">
+                                                    <span class="d-block mt-1 " style="font-size: 0.8rem; background-color: #B09F83; color: #050505">Plaza España</span>
+                                                </label>
+                                                <label class="image-option d-block text-center mx-2 my-1" for="imgAlcazarForm">
+                                                    <input type="radio" name="selectedImage" value="image_alcazar" required id="imgAlcazarForm">
+                                                    <img src="img/alcazar_sevilla_postal.jpg" alt="Postal del Real Alcázar de Sevilla" style="object-fit: contain; width: 200px; height: 200px; cursor: pointer; border: 2px solid transparent; border-radius: 5px;">
+                                                    <span class="d-block mt-1 " style="font-size: 0.8rem; background-color: #B09F83; color: #050505">Alcázar</span>
+                                                </label>
+                                                <label class="image-option d-block text-center mx-2 my-1" for="imgGiraldaForm">
+                                                    <input type="radio" name="selectedImage" value="image_giralda" required id="imgGiraldaForm">
+                                                    <img src="img/giralda_postal.jpg" alt="Postal de la Giralda de Sevilla" style="object-fit: contain; width: 200px; height: 200px; cursor: pointer; border: 2px solid transparent; border-radius: 5px;">
+                                                    <span class="d-block mt-1 " style="font-size: 0.8rem; background-color: #B09F83; color: #050505">Giralda</span>
+                                                </label>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="mensajeTextAreaForm" class="sr-only">Tu mensaje</label>
+                                        <textarea class="form-control bg-transparent border-primary p-4" placeholder="Escribe tu mensaje aquí..." rows="3" id="mensajeTextAreaForm" name="mensajeTextArea" autocomplete="off"></textarea>
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-primary btn-block font-weight-bold py-3" type="submit">Enviar Mensaje</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </div> </main>
 
 <div class="container-fluid pt-5 pb-5" style="background-color: #5C3F22;">
     <div class="container">
